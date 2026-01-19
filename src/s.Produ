@@ -1,0 +1,67 @@
+import React from 'react';
+
+// تعريف مُكوّن المنتج (Product Component) باستخدام دالة سهمية (Arrow Function)
+const Product = () => {
+  // تعريف الأنماط (Styles) باستخدام JavaScript Object لتحقيق المظهر الحديث
+
+  const cardStyle = {
+    maxWidth: '380px',
+    margin: '40px auto', 
+    padding: '30px',
+    borderRadius: '15px', // حواف ناعمة وعصرية
+    boxShadow: '0 8px 24px rgba(0, 0, 0, 0.1)', // ظل واضح وجميل
+    textAlign: 'center',
+    backgroundColor: '#ffffff',
+    fontFamily: 'Roboto, sans-serif' // خط حديث
+  };
+
+  const titleStyle = {
+    color: '#1a202c', 
+    fontSize: '1.8em',
+    marginBottom: '10px'
+  };
+
+  const descriptionStyle = {
+    color: '#4a5568', 
+    fontSize: '1em',
+    lineHeight: '1.6'
+  };
+
+  const buttonStyle = {
+    backgroundColor: '#38a169', // لون أخضر مريح (عصري)
+    color: 'white',
+    border: 'none',
+    padding: '12px 28px',
+    borderRadius: '8px',
+    cursor: 'pointer',
+    marginTop: '25px',
+    fontWeight: '700',
+    fontSize: '16px',
+    boxShadow: '0 4px 6px rgba(56, 161, 105, 0.3)',
+    transition: 'background-color 0.3s ease'
+  };
+
+  return (
+    <div style={cardStyle}>
+      {/* العنوان (Title) */}
+      <h2 style={titleStyle}>
+        خدمة التخزين السحابي برو
+      </h2>
+      
+      {/* الوصف (Description) */}
+      <p style={descriptionStyle}>
+        مساحة تخزين غير محدودة، ومزامنة فورية، وأمان على مستوى المؤسسات. اشترك اليوم وودّع مشاكل المساحة.
+      </p>
+      
+      {/* الزر (Button) */}
+      <button 
+        style={buttonStyle}
+        onClick={() => alert('تم تفعيل خطة الاشتراك!')}
+      >
+        اشترك الآن
+      </button>
+    </div>
+  );
+};
+
+export default Product;import Product from './Product';

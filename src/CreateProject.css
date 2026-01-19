@@ -1,0 +1,35 @@
+.create-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f7fe; /* نفس خلفية Codepure */
+}
+
+.form-card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  width: 500px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.form-header h2 { color: #121037; margin-bottom: 10px; }
+.form-header p { color: #a1abc0; font-size: 14px; margin-bottom: 30px; }
+
+.input-group { margin-bottom: 20px; }
+.input-group label { display: block; font-size: 13px; font-weight: bold; margin-bottom: 8px; color: #4a5568; }
+
+.input-group input, .input-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #eaedf7;
+  border-radius: 10px;
+  outline: none;
+}
+
+.input-group input:focus { border-color: #305eff; }
+
+.form-actions { display: flex; gap: 15px; margin-top: 30px; }
+.btn-primary { background: #305eff; color: white; border: none; padding: 12px 25px; border-radius: 10px; cursor: pointer; flex: 1; }
+.btn-secondary { background: #f3f4f6; color: #4b5563; border: none; padding: 12px 25px; border-radius: 10px; cursor: pointer; }
